@@ -5,7 +5,7 @@ from hybrid_recommender import hybrid_recommend
 st.title("Airline Recommendation System")
 
 # Load dataset
-df = pd.read_csv("airlines_reviews_clean.csv")
+df = pd.read_csv("/content/airlines_reviews.csv")
 
 traveller_type = st.selectbox("Select Traveller Type", df["Type of Traveller"].unique())
 

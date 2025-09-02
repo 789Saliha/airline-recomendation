@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load dataset globally (so both app.py and module can use it)
-df = pd.read_csv("airlines_reviews_clean.csv")
+df = pd.read_csv("/content/airlines_reviews.csv")
 
 def hybrid_recommend(traveller_type, top_n=5):
     summary = df.groupby("Airline").agg(
